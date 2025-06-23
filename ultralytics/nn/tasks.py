@@ -72,6 +72,8 @@ from ultralytics.nn.modules import (
     C2fCBAMv2,
     C3CBAM,
     C3CBAMv2,
+    InvertedResidual, 
+    Conv3BN,
     
 )
 from ultralytics.utils import DEFAULT_CFG_DICT, DEFAULT_CFG_KEYS, LOGGER, YAML, colorstr, emojis
@@ -1651,6 +1653,9 @@ def parse_model(d, ch, verbose=True):
             C3CBAM,
             C3CBAMv2,
             
+            InvertedResidual, 
+            Conv3BN,
+            
         }
     )
     repeat_modules = frozenset(  # modules with 'repeat' arguments
@@ -1674,6 +1679,8 @@ def parse_model(d, ch, verbose=True):
             C2fCBAMv2,
             C3CBAM,
             C3CBAMv2,
+            InvertedResidual, 
+            Conv3BN,
         }
     )
     for i, (f, n, m, args) in enumerate(d["backbone"] + d["head"]):  # from, number, module, args
