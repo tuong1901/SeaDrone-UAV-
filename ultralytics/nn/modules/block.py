@@ -6,6 +6,10 @@ from typing import List, Optional, Tuple
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
+from ultralytics.nn.modules.block import C2f  # nếu C2f cũng nằm trong block.py
+
+# HOẶC nếu bị lỗi đệ quy do import chính mình, thì dùng:
+from . import C2f
 
 from ultralytics.utils.torch_utils import fuse_conv_and_bn
 
