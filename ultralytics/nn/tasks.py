@@ -71,7 +71,7 @@ from ultralytics.nn.modules import (
     C2fCBAM,
     C2fCBAMv2,
     C3CBAM,
-    C3CBAMv2
+    C3CBAMv2,
     
 )
 from ultralytics.utils import DEFAULT_CFG_DICT, DEFAULT_CFG_KEYS, LOGGER, YAML, colorstr, emojis
