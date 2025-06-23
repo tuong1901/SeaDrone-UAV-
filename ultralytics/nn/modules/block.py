@@ -5,8 +5,7 @@ from typing import List, Optional, Tuple
 
 import torch
 import torch.nn as nn
-import torch.nn.functional as F
-from ultralytics.nn.modules.block import C2f  # nếu C2f cũng nằm trong block.py
+import torch.nn.functional as F 
 
 # HOẶC nếu bị lỗi đệ quy do import chính mình, thì dùng:
 from . import C2f
