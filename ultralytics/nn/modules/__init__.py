@@ -62,7 +62,8 @@ from .block import (
     C2fCBAM,
     C3CBAM,
     C2fCBAMv2,
-    C3CBAMv2,
+    C3CBAMv2
+
 )
 from .conv import (
     CBAM,
@@ -79,6 +80,9 @@ from .conv import (
     LightConv,
     RepConv,
     SpatialAttention,
+
+    InvertedResidual, 
+    Conv3BN
 )
 from .head import (
     OBB,
@@ -187,4 +191,6 @@ __all__ = (
     "C3CBAM",
     "C2fCBAMv2",
     "C3CBAMv2",
+    'InvertedResidual', 
+    'Conv3BN'
 )
