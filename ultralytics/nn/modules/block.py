@@ -58,7 +58,9 @@ __all__ = (
     "C2fCBAM",
     "C3CBAM",
     "C2fCBAMv2",
-    "C3CBAMv2"
+    "C3CBAMv2",
+    "Conv3BN", 
+    "InvertedResidual",
 )
 
 class CBLinear(nn.Module):
